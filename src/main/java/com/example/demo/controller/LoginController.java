@@ -3,6 +3,7 @@ package com.example.demo.controller;
 import com.example.demo.domain.Resources;
 import com.example.demo.domain.Role;
 import com.example.demo.domain.User;
+import com.example.demo.util.Common;
 import com.example.demo.util.Message;
 import com.example.demo.util.ResponseUtil;
 import org.apache.shiro.SecurityUtils;
@@ -73,4 +74,14 @@ public class LoginController extends BasicController{
         }
         return ResponseUtil.successResponse("");
     }
+
+    @GetMapping("/login")
+    public Map<String,Object> login() {
+        Map<String,Object> map = new HashMap<String,Object>();
+        map.put("returnCode", Common.Error_001);
+        map.put("returnMsg", Common.Error_MSG_001);
+        map.put("returnData"," 未登录");
+        return map;
+    }
+
 }
