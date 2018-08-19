@@ -64,4 +64,13 @@ public class LoginController extends BasicController{
         map.put("permissionList",permissionList);
         return ResponseUtil.successResponse(map);
     }
+    @RequestMapping(value = "/logout",method = RequestMethod.GET)
+    public Map<String,Object> logout(){
+        try {
+            Subject currentUser = SecurityUtils.getSubject();
+            currentUser.logout();
+        } catch (Exception e) {
+        }
+        return ResponseUtil.successResponse("");
+    }
 }
