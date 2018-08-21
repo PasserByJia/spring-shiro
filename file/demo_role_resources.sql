@@ -1,0 +1,10 @@
+INSERT INTO demo.role_resources (roles_id, resources_id) VALUES (1, 1);
+INSERT INTO demo.role_resources (roles_id, resources_id) VALUES (3, 1);
+INSERT INTO demo.role_resources (roles_id, resources_id) VALUES (1, 2);
+INSERT INTO demo.role_resources (roles_id, resources_id) VALUES (3, 2);
+INSERT INTO demo.role_resources (roles_id, resources_id) VALUES (1, 3);
+INSERT INTO demo.role_resources (roles_id, resources_id) VALUES (3, 3);
+INSERT INTO demo.role_resources (roles_id, resources_id) VALUES (2, 4);
+INSERT INTO demo.role_resources (roles_id, resources_id) VALUES (3, 4);
+INSERT INTO demo.role_resources (roles_id, resources_id) VALUES (2, 5);
+INSERT INTO demo.role_resources (roles_id, resources_id) VALUES (3, 5);

@@ -11,7 +11,6 @@ import org.apache.shiro.authc.*;
 import org.apache.shiro.subject.Subject;
 import org.springframework.web.bind.annotation.*;
 
-import javax.persistence.SecondaryTable;
 import java.util.*;
 
 @RestController
@@ -75,13 +74,10 @@ public class LoginController extends BasicController{
         return ResponseUtil.successResponse("");
     }
 
+    //当后台登陆失效后前台会请求一次get方法的login原因不明
     @GetMapping("/login")
     public Map<String,Object> login() {
-        Map<String,Object> map = new HashMap<String,Object>();
-        map.put("returnCode", Common.Error_001);
-        map.put("returnMsg", Common.Error_MSG_001);
-        map.put("returnData"," 未登录");
-        return map;
+        return ResponseUtil.errorResponse(Common.Error_001,Common.Error_MSG_001,null);
     }
 
 }

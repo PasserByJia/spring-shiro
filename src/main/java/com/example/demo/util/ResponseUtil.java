@@ -12,4 +12,12 @@ public class ResponseUtil {
         map.put("returnData",o);
         return map;
     }
+
+    public static Map<String, Object> errorResponse(String code ,String msg ,Object o){
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("returnCode", code);
+        map.put("returnMsg", msg);
+        map.put("returnData",o);
+        return map;
+    }
 }
