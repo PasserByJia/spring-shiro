@@ -15,4 +15,6 @@ public class UserService extends  BasicService<User,Integer>
         return userDao.findByUsername(username);
     }
 
+    public User updatePassword(String password) {return  userDao.updatePassword(password);}
+
 }

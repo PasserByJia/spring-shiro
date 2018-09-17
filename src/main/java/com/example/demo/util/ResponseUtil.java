@@ -13,6 +13,13 @@ public class ResponseUtil {
         return map;
     }
 
+    public static Map<String, Object> successResponse(String code,String msg){
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("returnCode", code);
+        map.put("returnMsg", msg);
+        map.put("returnData",null);
+        return map;
+    }
     public static Map<String, Object> errorResponse(String code ,String msg ,Object o){
         Map<String, Object> map = new HashMap<String, Object>();
         map.put("returnCode", code);

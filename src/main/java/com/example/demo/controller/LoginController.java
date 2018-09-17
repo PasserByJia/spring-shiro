@@ -43,7 +43,7 @@ public class LoginController extends BasicController{
         } catch (AuthenticationException ae) {
             message = new Message("登录失败");
         }
-        return ResponseUtil.successResponse("success");
+        return ResponseUtil.successResponse(message);
     }
 
     @RequestMapping(value = "/getRes",method = RequestMethod.GET)
