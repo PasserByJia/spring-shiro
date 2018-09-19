@@ -37,13 +37,13 @@ public class LoginController extends BasicController{
             }
             message = new Message("success");
         } catch (UnknownAccountException | IncorrectCredentialsException uae) {
-            message = new Message("用户名或密码错误");
+            return ResponseUtil.successResponse("用户名或密码错误");
         } catch (ExcessiveAttemptsException eae) {
-            message = new Message("登录次数超过5次，账户被锁定！");
+            return ResponseUtil.successResponse("登录次数超过5次，账户被锁定！");
         } catch (AuthenticationException ae) {
-            message = new Message("登录失败");
+            return ResponseUtil.successResponse("登录失败");
         }
-        return ResponseUtil.successResponse(message);
+        return ResponseUtil.successResponse("success");
     }
 
     @RequestMapping(value = "/getRes",method = RequestMethod.GET)

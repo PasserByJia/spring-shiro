@@ -5,5 +5,4 @@ import com.example.demo.jpaRepository.MyRepository;
 
 public interface UserDao extends MyRepository<User,Integer> {
     User findByUsername(String username);
-    User updatePassword(String password);
 }

@@ -2,7 +2,6 @@ package com.example.demo.controller;
 
 import com.example.demo.domain.User;
 import com.example.demo.util.Common;
-import com.example.demo.util.Message;
 import com.example.demo.util.ResponseUtil;
 import org.apache.shiro.SecurityUtils;
 import org.springframework.web.bind.annotation.RequestBody;
