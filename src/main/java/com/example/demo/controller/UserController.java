@@ -24,6 +24,6 @@ public class UserController extends BasicController {
         }catch (Exception e){
            return ResponseUtil.errorResponse(Common.Error_500,"修改密码失败",null);
         }
-        return ResponseUtil.successResponse(Common.Error_001,"修改密码成功请重新登录");
+        return ResponseUtil.successResponse(Common.Error_001,"修改密码成功请重新登录！");
     }
 }
