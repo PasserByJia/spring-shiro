@@ -1,0 +1,12 @@
+INSERT INTO demo.student (id, address, age, name, no, classes) VALUES (1, 'jiangxi', '18', 'jh', '201601', '161');
+INSERT INTO demo.student (id, address, age, name, no, classes) VALUES (2, '11', '11', '11', '1111', '111');
+INSERT INTO demo.student (id, address, age, name, no, classes) VALUES (3, '33', '3', '33', '333', '333');
+INSERT INTO demo.student (id, address, age, name, no, classes) VALUES (4, '44', '44', '44', '44444', '444');
+INSERT INTO demo.student (id, address, age, name, no, classes) VALUES (5, '55', '55', '55', '55', '555');
+INSERT INTO demo.student (id, address, age, name, no, classes) VALUES (6, '66', '66', '66', '6666', '66');
+INSERT INTO demo.student (id, address, age, name, no, classes) VALUES (7, '77', '77', '77', '7777', '777');
+INSERT INTO demo.student (id, address, age, name, no, classes) VALUES (8, '88', '88', '88', '8', '888');
+INSERT INTO demo.student (id, address, age, name, no, classes) VALUES (9, '99', '99', '99', '999', '999');
+INSERT INTO demo.student (id, address, age, name, no, classes) VALUES (10, '1111', '11', '111', '1111', '111');
+INSERT INTO demo.student (id, address, age, name, no, classes) VALUES (11, '232', '2322', '2323', '24455', '2332');
+INSERT INTO demo.student (id, address, age, name, no, classes) VALUES (12, '332', '2323', '232', '3232', '2332');

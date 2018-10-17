@@ -1,7 +1,10 @@
 package com.example.demo.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
+import org.hibernate.annotations.NotFound;
+import org.hibernate.annotations.NotFoundAction;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -27,6 +30,10 @@ public class User implements Serializable {
     @javax.persistence.ManyToMany
     protected Set<Role> role;
 
+    @javax.persistence.OneToOne
+    @JsonIgnore
+    @NotFound(action=NotFoundAction.IGNORE)
+    private Actor actor;
 
     public User(){
         super();
@@ -71,5 +78,12 @@ public class User implements Serializable {
 
     public void setNickname(String nickname) {
         this.nickname = nickname;
+    }
+
+    public Actor getActor() {
+        return actor;
+    }
+    public void setActor(Actor actor) {
+        this.actor = actor;
     }
 }
